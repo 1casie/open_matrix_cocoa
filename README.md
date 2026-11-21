@@ -4,7 +4,12 @@ A city-generation project for VRChat (Unity **2022.3.22f1**, VRChat Worlds SDK *
 built-in render pipeline, linear colour). It generates a snowed-in, neon-soaked brutalist city
 with buildings, flying traffic and signs.
 
-The scene uses a small spawn platform in place of the lounge, garage and interactive props.
+The lounge and garage are replaced by a small spawn platform. The flying broom is just
+ahead and to your right when you spawn; look slightly down. Interact to mount, look to steer and climb or dive,
+use movement controls for throttle and strafe, press **Use** to boost, and **Jump** to
+dismount. The broom returns to the platform when left idle for about 30 seconds.
+
+The broom meshes and flight controls are adapted from Unearthed.
 
 Clone with Git LFS installed: the generated traffic and sign meshes are stored in LFS.
 Restore the VRChat packages with VRChat Creator Companion or VPM before opening the project.

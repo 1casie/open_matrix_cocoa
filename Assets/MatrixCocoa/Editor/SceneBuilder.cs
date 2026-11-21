@@ -57,7 +57,7 @@ namespace MatrixCocoa.EditorTools
             foreach (var m in cityMeshes)
             {
                 var go = MakeRenderer(cityRoot.transform, m, facade);
-                // the hovercars bump into the buildings near the station (static mesh colliders)
+                // Keep nearby buildings solid for the broom and players.
                 if (m.bounds.SqrDistance(Vector3.zero) < CollideRadius * CollideRadius) go.AddComponent<MeshCollider>().sharedMesh = m;
             }
 
@@ -94,6 +94,7 @@ namespace MatrixCocoa.EditorTools
             var spawn = new GameObject("Spawn").transform;
             spawn.SetParent(root.transform, false);
             spawn.SetPositionAndRotation(new Vector3(0, 0.6f, 0), Quaternion.LookRotation(new Vector3(outward.x, 0, outward.y)));
+            BroomBuilder.Build(root.transform, spawn);
 
             // ---- avatar light (follows the preset's sun)
             var sun = new GameObject("Sun");
