@@ -1,0 +1,12 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/MatrixCocoa/Scenes/MatrixCocoa.unity
+    guid: 523d7c165eff1e145b95caa2a6cb968b
+  m_configObjects:
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 0d979acd1a3cead40a5bc77e3e00a710, type: 2}

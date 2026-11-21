@@ -1,0 +1,2 @@
+Assets/MatrixCocoa/Generated/TrafficMeshes.asset filter=lfs diff=lfs merge=lfs -text
+Assets/MatrixCocoa/Generated/SignMeshes.asset filter=lfs diff=lfs merge=lfs -text
